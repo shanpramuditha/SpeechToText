@@ -1,0 +1,169 @@
+[24-Sep-2018 15:04:52 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 24
+[24-Sep-2018 15:04:52 Europe/London] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: Client error: `PATCH https://www.googleapis.com/storage/v1/b/audio-to-text-storage/o/?predefinedAcl=PUBLICREAD` resulted in a `404 Not Found` response:
+Not Found
+ in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php:263
+Stack trace:
+#0 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php(168): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
+#1 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RestTrait.php(95): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
+#2 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src/Connection/Rest.php(211): Google\Cloud\Storage\Connection\Rest->send('objects', 'patch', Array)
+#3 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php on line 263
+[24-Sep-2018 15:09:00 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 27
+[24-Sep-2018 15:09:00 Europe/London] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: Client error: `PATCH https://www.googleapis.com/storage/v1/b/audio-to-text-storage/o/?predefinedAcl=PUBLICREAD` resulted in a `404 Not Found` response:
+Not Found
+ in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php:263
+Stack trace:
+#0 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php(168): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
+#1 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RestTrait.php(95): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
+#2 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src/Connection/Rest.php(211): Google\Cloud\Storage\Connection\Rest->send('objects', 'patch', Array)
+#3 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php on line 263
+[24-Sep-2018 15:09:40 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 27
+[24-Sep-2018 15:09:40 Europe/London] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: Client error: `PATCH https://www.googleapis.com/storage/v1/b/audio-to-text-storage/o/?predefinedAcl=PUBLICREAD` resulted in a `404 Not Found` response:
+Not Found
+ in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php:263
+Stack trace:
+#0 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php(168): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
+#1 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RestTrait.php(95): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
+#2 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src/Connection/Rest.php(211): Google\Cloud\Storage\Connection\Rest->send('objects', 'patch', Array)
+#3 /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-storage/src in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-core/src/RequestWrapper.php on line 263
+[24-Sep-2018 15:10:57 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 28
+[24-Sep-2018 15:14:51 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 28
+[24-Sep-2018 15:15:55 Europe/London] PHP Fatal error:  Uncaught Error: Cannot use object of type Google\Cloud\Storage\StorageObject as array in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 28
+[24-Sep-2018 15:17:45 Europe/London] PHP Notice:  Undefined variable: objectName in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/processfile.php on line 28
+[24-Sep-2018 15:19:25 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:21:30 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:22:20 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:22:51 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:23:53 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:26:37 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:27:19 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:34:42 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:35:28 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:35:52 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:38:21 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:38:54 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:38:57 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[24-Sep-2018 15:39:46 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 15:39:49 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[24-Sep-2018 21:12:11 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 21:12:18 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[24-Sep-2018 21:14:39 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 21:14:43 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[24-Sep-2018 21:15:05 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[24-Sep-2018 21:15:08 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[24-Sep-2018 21:15:29 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[25-Sep-2018 12:57:01 Europe/London] PHP Notice:  Undefined index: localFile in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 8
+[25-Sep-2018 12:57:01 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[25-Sep-2018 12:57:37 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[25-Sep-2018 12:57:59 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[25-Sep-2018 13:04:02 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[25-Sep-2018 13:04:05 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[25-Sep-2018 15:49:36 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[25-Sep-2018 15:49:39 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:46:12 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:46:16 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:50:21 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:50:27 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:51:02 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:51:06 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:54:16 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:54:20 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:55:04 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:55:07 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:55:53 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:55:57 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 04:58:48 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 04:58:52 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 05:19:04 Europe/London] PHP Notice:  Undefined index: localFile in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 8
+[26-Sep-2018 05:19:04 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 05:20:07 Europe/London] PHP Notice:  Undefined index: localFile in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 8
+[26-Sep-2018 05:20:07 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 05:57:45 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 05:57:50 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 07:06:02 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 07:06:05 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 07:09:11 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 07:10:14 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 07:10:17 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 07:22:25 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 07:22:28 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 07:30:44 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 07:30:48 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:52:29 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:52:33 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:53:11 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:53:14 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:54:18 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:54:25 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:55:12 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:55:15 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:56:53 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:56:56 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:58:35 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:58:41 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 09:59:13 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 09:59:17 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 10:03:14 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 10:03:18 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 10:23:45 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 10:23:50 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 10:34:13 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 10:34:17 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 10:35:19 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 10:35:23 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 10:54:28 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 10:57:56 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 10:58:09 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 10:59:21 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:07:33 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:07:51 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:10:17 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:10:41 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:11:39 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:12:43 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:13:10 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:13:43 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:16:14 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:19:19 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:20:05 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:20:24 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:20:46 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:21:05 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:21:22 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:23:19 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:24:03 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:25:21 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:35:14 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:35:32 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:36:52 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:39:15 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:39:46 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:41:23 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:42:34 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:46:02 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:47:36 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:50:01 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:51:01 Europe/London] PHP Notice:  Undefined index: localFile in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 8
+[26-Sep-2018 11:51:02 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:51:17 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:51:45 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:52:10 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:52:25 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:53:05 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 11:53:08 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[26-Sep-2018 11:53:42 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:54:12 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:54:57 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 11:59:05 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 12:01:31 Europe/London] PHP Notice:  Undefined index: id in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/process.php on line 52
+[26-Sep-2018 12:03:08 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 12:07:11 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[26-Sep-2018 12:35:14 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[27-Sep-2018 05:02:19 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[27-Sep-2018 05:02:23 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
+[11-Oct-2018 16:38:18 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[27-Oct-2018 03:57:17 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[27-Oct-2018 08:25:10 Europe/London] PHP Warning:  The use statement with non-compound name 'Exception' has no effect in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/textapi.php on line 6
+[27-Oct-2018 08:25:14 Europe/London] PHP Notice:  Undefined index: alternatives in /home/softinkl/s1.softinklab.com/MeetingMinutesRecorder/vendor/google/cloud-speech/src/Result.php on line 81
