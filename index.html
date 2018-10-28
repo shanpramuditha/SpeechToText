@@ -93,7 +93,7 @@
 </head>
 
 <body>
-    <article>
+        <article>
 
         <section class="experiment recordrtc">
             <img src="images/wertu.png" style="height:20hv;width:40vw" />
@@ -144,7 +144,7 @@
                     params[d(match[1])] = d(match[2]);
 
                     if(d(match[2]) === 'true' || d(match[2]) === 'false') {
-                        params[d(match[1])] = d(match[2]) === 'true' ? true : false;
+                        params[d(match[1])] = d(match[2]) === 'true';
                     }
                 }
 
@@ -168,7 +168,7 @@
                         button.disableStateWaiting = false;
                     }, 2 * 1000);
 
-                    button.innerHTML = 'Star Recording';
+                    button.innerHTML = 'Start Recording';
 
                     function stopStream() {
                         if(button.stream && button.stream.stop) {
@@ -294,8 +294,8 @@
                     button.mediaCapturedCallback = function() {
                         button.recordRTC = RecordRTC(button.stream, {
                             type: 'audio',
-                            bufferSize: typeof params.bufferSize == 'undefined' ? 0 : parseInt(params.bufferSize),
-                            sampleRate: typeof params.sampleRate == 'undefined' ? 44100 : parseInt(params.sampleRate),
+                            bufferSize: typeof params.bufferSize === 'undefined' ? 0 : parseInt(params.bufferSize),
+                            sampleRate: typeof params.sampleRate === 'undefined' ? 44100 : parseInt(params.sampleRate),
                             leftChannel: params.leftChannel || false,
                             disableLogs: params.disableLogs || false,
                             recorderType: webrtcDetectedBrowser === 'edge' ? StereoAudioRecorder : null
@@ -628,7 +628,7 @@
                 // neither MediaRecorder API
                 // so lets disable both video/screen recording options
 
-                console.warn('Neither MediaRecorder API nor webp is supported in Microsoft Edge. You cam merely record audio.');
+                console.warn('Neither MediaRecorder API nor webp is supported in Microsoft Edge. You can merely record audio.');
 
                 recordingMedia.innerHTML = '<option value="record-audio">Audio</option>';
                 setMediaContainerFormat(['WAV']);
@@ -811,6 +811,7 @@
         window.useThisGithubPath = 'muaz-khan/RecordRTC';
     </script>
     <script src="https://cdn.webrtc-experiment.com/commits.js" async></script>
+    </article>
 </body>
 
 </html>

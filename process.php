@@ -104,12 +104,12 @@
 					data: {fileId: '<?php echo $id; ?>'},
 					dataType: 'json', 
 					success: function(data){
-						if (data.status == "OK"){
+						if (data.status === "OK"){
 							clearInterval(myVar);
 							$('#msg').text("Transfering Your Audio Among Servers");
 							processFile(data.url);
 						}
-						if (data.status == "ERROR"){
+						if (data.status === "ERROR"){
 							alert ("Converting Error! Please Retry.");
 							window.location.href = "index.html";
 						}
@@ -124,12 +124,12 @@
 					data: {url: url},
 					dataType: 'json', 
 					success: function(data){
-						if (data.status == "OK"){
-							$('#msg').text("Converting To Text. This may take long time than usual. Please do not refresh the page.");
+						if (data.status === "OK"){
+							$('#msg').text("Converting To Text. This may take longer than usual. Please do not refresh the page.");
 							//$("#loader_image").attr("src","images/process.png");
 							window.location.href = "textapi.php";
 						}
-						if (data.status == "ERROR"){
+						if (data.status === "ERROR"){
 							alert ("Converting Error! Please Retry.");
 							window.location.href = "index.html";
 						}
