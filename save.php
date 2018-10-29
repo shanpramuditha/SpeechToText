@@ -3,6 +3,10 @@
 // MIT License   - https://www.webrtc-experiment.com/licence/
 // Documentation - https://github.com/muaz-khan/RecordRTC
 
+require_once 'vendor/autoload.php';
+
+if ( ! session_id() ) @ session_start();
+
 header("Access-Control-Allow-Origin: *");
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -79,8 +83,12 @@ function selfInvoker()
     }
     */
 
+    if (!file_exists('uploads/')){
+        mkdir('uploads');
+    }
     $filePath = 'uploads/' . $fileName;
-    
+    $_SESSION['fileName'] = $fileName;
+
     // make sure that one can upload only allowed audio/video files
     $allowed = array(
         'webm',
@@ -120,8 +128,9 @@ function selfInvoker()
             echo 'Problem saving file: '.$tempName;
         }
         return;
+    }else{
+        save_to_mongodb($fileName);
     }
-    
     echo 'success';
 }
 
@@ -142,6 +151,25 @@ function return_bytes($val) {
     return $val;
 }
 */
+
+function save_to_mongodb($filename){
+    $manager = new MongoDB\Driver\Manager("mongodb://eduscope:edu123123@ds143893.mlab.com:43893/eduscope");
+
+    try {
+        $bulk = new MongoDB\Driver\BulkWrite();
+        $bulk->insert(
+            [
+                'name' => "Recording on ".date("Y-m-d"),
+                "filename" => $filename,
+                "transcript" => "blank_for_now"
+            ]
+        );
+
+        $manager->executeBulkWrite("eduscope.transcripts", $bulk);
+    } catch(MongoDB\Driver\Exception $e) {
+        echo $e;
+    }
+}
 
 selfInvoker();
 ?>

@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f4d930c2f82498c68497ee1477c8098",
+    "hash": "fad3b6e04a02b8c8b5e571203d962329",
+    "content-hash": "9b964b7b4a7422e690c48a3390c3829e",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -50,19 +51,19 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2017-06-27T22:17:23+00:00"
+            "time": "2017-06-27 22:17:23"
         },
         {
             "name": "google/auth",
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/google/google-auth-library-php.git",
+                "url": "https://github.com/googleapis/google-auth-library-php.git",
                 "reference": "436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
+                "url": "https://api.github.com/repos/googleapis/google-auth-library-php/zipball/436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
                 "reference": "436007a77fd2037f933d3a5c8e4c7e0c9b88a7b0",
                 "shasum": ""
             },
@@ -97,19 +98,19 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2018-07-23T21:44:38+00:00"
+            "time": "2018-07-23 21:44:38"
         },
         {
             "name": "google/cloud-core",
             "version": "v1.22.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GoogleCloudPlatform/google-cloud-php-core.git",
+                "url": "https://github.com/googleapis/google-cloud-php-core.git",
                 "reference": "0cbcc31593b2d2fdc11dd819c4952b0ac4b4b483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GoogleCloudPlatform/google-cloud-php-core/zipball/0cbcc31593b2d2fdc11dd819c4952b0ac4b4b483",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/0cbcc31593b2d2fdc11dd819c4952b0ac4b4b483",
                 "reference": "0cbcc31593b2d2fdc11dd819c4952b0ac4b4b483",
                 "shasum": ""
             },
@@ -156,19 +157,19 @@
                 "Apache-2.0"
             ],
             "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
-            "time": "2018-08-08T15:42:37+00:00"
+            "time": "2018-08-08 15:42:37"
         },
         {
             "name": "google/cloud-speech",
             "version": "v0.16.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GoogleCloudPlatform/google-cloud-php-speech.git",
+                "url": "https://github.com/googleapis/google-cloud-php-speech.git",
                 "reference": "4f2bdb0b861dbad71b4660ada1524c21cef6c5ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GoogleCloudPlatform/google-cloud-php-speech/zipball/4f2bdb0b861dbad71b4660ada1524c21cef6c5ee",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-speech/zipball/4f2bdb0b861dbad71b4660ada1524c21cef6c5ee",
                 "reference": "4f2bdb0b861dbad71b4660ada1524c21cef6c5ee",
                 "shasum": ""
             },
@@ -207,19 +208,19 @@
                 "Apache-2.0"
             ],
             "description": "Cloud Speech Client for PHP",
-            "time": "2018-08-08T15:42:37+00:00"
+            "time": "2018-08-08 15:42:37"
         },
         {
             "name": "google/cloud-storage",
             "version": "v1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/GoogleCloudPlatform/google-cloud-php-storage.git",
+                "url": "https://github.com/googleapis/google-cloud-php-storage.git",
                 "reference": "e05e49fde9e517f801d5785af0fc2f433bf019b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GoogleCloudPlatform/google-cloud-php-storage/zipball/e05e49fde9e517f801d5785af0fc2f433bf019b8",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-storage/zipball/e05e49fde9e517f801d5785af0fc2f433bf019b8",
                 "reference": "e05e49fde9e517f801d5785af0fc2f433bf019b8",
                 "shasum": ""
             },
@@ -257,7 +258,7 @@
                 "Apache-2.0"
             ],
             "description": "Cloud Storage Client for PHP",
-            "time": "2018-08-08T15:42:37+00:00"
+            "time": "2018-08-08 15:42:37"
         },
         {
             "name": "google/gax",
@@ -309,7 +310,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2018-07-18T21:57:44+00:00"
+            "time": "2018-07-18 21:57:44"
         },
         {
             "name": "google/protobuf",
@@ -350,7 +351,7 @@
             "keywords": [
                 "proto"
             ],
-            "time": "2018-07-27T20:30:28+00:00"
+            "time": "2018-07-27 20:30:28"
         },
         {
             "name": "grpc/grpc",
@@ -391,7 +392,7 @@
             "keywords": [
                 "rpc"
             ],
-            "time": "2018-06-28T22:47:39+00:00"
+            "time": "2018-06-28 22:47:39"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -456,7 +457,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-04-22T15:46:56+00:00"
+            "time": "2018-04-22 15:46:56"
         },
         {
             "name": "guzzlehttp/promises",
@@ -507,7 +508,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "time": "2016-12-20 10:07:11"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -572,7 +573,72 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/bd148eab0493e38354e45e2cd7db59b90fdcad79",
+                "reference": "bd148eab0493e38354e45e2cd7db59b90fdcad79",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.5.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.36 || ^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                },
+                {
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
+                },
+                {
+                    "name": "Katherine Walker",
+                    "email": "katherine.walker@mongodb.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2018-07-18 14:33:41"
         },
         {
             "name": "monolog/monolog",
@@ -650,7 +716,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2017-06-19 01:22:40"
         },
         {
             "name": "psr/cache",
@@ -696,7 +762,7 @@
                 "psr",
                 "psr-6"
             ],
-            "time": "2016-08-06T20:24:11+00:00"
+            "time": "2016-08-06 20:24:11"
         },
         {
             "name": "psr/http-message",
@@ -746,7 +812,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -793,7 +859,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "rize/uri-template",
@@ -837,7 +903,7 @@
                 "template",
                 "uri"
             ],
-            "time": "2017-06-14T03:57:53+00:00"
+            "time": "2017-06-14 03:57:53"
         }
     ],
     "packages-dev": [],
@@ -846,6 +912,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
     "platform-dev": []
 }

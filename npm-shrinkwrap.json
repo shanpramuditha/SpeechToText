@@ -1,0 +1,59 @@
+{
+  "name": "speechtotext",
+  "version": "1.0.0",
+  "dependencies": {
+    "bson": {
+      "version": "1.1.0",
+      "from": "bson@^1.1.0",
+      "resolved": "https://registry.npmjs.org/bson/-/bson-1.1.0.tgz"
+    },
+    "memory-pager": {
+      "version": "1.1.0",
+      "from": "memory-pager@>=1.0.2 <2.0.0",
+      "resolved": "https://registry.npmjs.org/memory-pager/-/memory-pager-1.1.0.tgz",
+      "optional": true
+    },
+    "mongodb": {
+      "version": "3.1.8",
+      "from": "mongodb",
+      "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-3.1.8.tgz"
+    },
+    "mongodb-core": {
+      "version": "3.1.7",
+      "from": "mongodb-core@3.1.7",
+      "resolved": "https://registry.npmjs.org/mongodb-core/-/mongodb-core-3.1.7.tgz"
+    },
+    "require_optional": {
+      "version": "1.0.1",
+      "from": "require_optional@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/require_optional/-/require_optional-1.0.1.tgz"
+    },
+    "resolve-from": {
+      "version": "2.0.0",
+      "from": "resolve-from@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/resolve-from/-/resolve-from-2.0.0.tgz"
+    },
+    "safe-buffer": {
+      "version": "5.1.2",
+      "from": "safe-buffer@>=5.1.2 <6.0.0",
+      "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
+    },
+    "saslprep": {
+      "version": "1.0.2",
+      "from": "saslprep@^1.0.0",
+      "resolved": "https://registry.npmjs.org/saslprep/-/saslprep-1.0.2.tgz",
+      "optional": true
+    },
+    "semver": {
+      "version": "5.6.0",
+      "from": "semver@^5.1.0",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-5.6.0.tgz"
+    },
+    "sparse-bitfield": {
+      "version": "3.0.3",
+      "from": "sparse-bitfield@>=3.0.3 <4.0.0",
+      "resolved": "https://registry.npmjs.org/sparse-bitfield/-/sparse-bitfield-3.0.3.tgz",
+      "optional": true
+    }
+  }
+}

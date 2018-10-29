@@ -1,5 +1,6 @@
 <?php
-	session_start();
+    if ( ! session_id() ) @ session_start();
+
 	$_SESSION['url'] = "sdas";
 	ini_set('max_execution_time', 0);
 	require 'vendor/autoload.php';
@@ -46,11 +47,34 @@
 				$text .= $alternative['transcript'];
 			}
 		}
+
+		$fileName = $_SESSION['fileName'];
+		update_mongodb($fileName, $text);
+
 	}else{
 		header("Location: index.php");
 		die();
 	}
+
+function update_mongodb($filename, $text){
+    $manager = new MongoDB\Driver\Manager("mongodb://eduscope:edu123123@ds143893.mlab.com:43893/eduscope");
+
+    try {
+        $bulk = new MongoDB\Driver\BulkWrite();
+        $bulk->update(
+            ["filename" => $filename],
+            ['$set' =>
+                ["transcript" => $text]
+            ]
+        );
+
+        $manager->executeBulkWrite("eduscope.transcripts", $bulk);
+    } catch(MongoDB\Driver\Exception $e) {
+        echo $e;
+    }
+}
 ?>
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -64,7 +88,7 @@
         	<div class="py-5 text-center">
 		        <!--<img class="d-block mx-auto mb-4" src="images/logo.png" alt="" height="200"> -->
 		        <h2>Meeting Minute Recorder</h2>
-		        <p class="lead">Here's your today meeting record</p>
+		        <p class="lead">Here's your today meeting transcript</p>
 		    </div>
 		</div>
 		<div id="step1" class="container">

@@ -3,6 +3,8 @@
         "google/cloud-speech": "^0.16.0",
         "google/cloud-storage": "^1.7",
         "ext-json": "*",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.4"
     }
 }

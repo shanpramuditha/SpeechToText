@@ -5,6 +5,25 @@
 > Documentation - github.com/muaz-khan/RecordRTC
 > and           - RecordRTC.org
 -->
+<?php
+function get_all_records_from_mongodb(){
+    $options = [
+        'projection' => [
+            '_id' => 0,
+            'filename' => 1,
+            'name' => 1,
+            'transcript' => 1
+        ]
+    ];
+
+    $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
+
+    $query = new MongoDB\Driver\Query([], $options );
+
+    return $manager->executeQuery("eduscope.transcripts", $query)->toArray();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,6 +113,29 @@
 
 <body>
         <article>
+        <section>
+            <div align="right">
+                <input class="form-control" list="artists" id="artist" maxlength="20" placeholder="search" required autocomplete="off"/>
+
+                <datalist id="artists">
+                    <script type='text/javascript'>
+                        <?php
+                        $php_array = get_all_records_from_mongodb();
+                        $js_array = json_encode($php_array);
+                        echo "var recordings = ". $js_array . ";\n";
+                        ?>
+
+                        for (var key in recordings) {
+                            let filename = recordings[key].filename.split('.')[0];
+                            let name = recordings[key].name.split(' ')[2];
+                            let transcript = recordings[key].transcript;
+
+                            $('#artists').append("<option id='" + filename + "' value='" + transcript + "'>" + name + "</option>");
+                        }
+                    </script>
+                </datalist>
+            </div>
+        </section>
 
         <section class="experiment recordrtc">
             <img src="images/wertu.png" style="height:20hv;width:40vw" />
@@ -126,7 +168,7 @@
 
             <br>
 
-            <audio controls muted></audio>
+            <audio controls muted style="visibility: hidden"></audio>
             <h4 id="msg"></h4>
         </section>
 
@@ -658,7 +700,7 @@
                 // recordingDIV.querySelector('#save-to-disk').onclick = function() {
                 //     if(!recordRTC) return alert('No recording found.');
 
-                //     recordRTC.save();
+                // recordRTC.save();
                 // };
 
                 // recordingDIV.querySelector('#open-new-tab').onclick = function() {
@@ -675,8 +717,7 @@
 
                     var button = this;
                     uploadToServer(recordRTC, function(progress, fileURL) {
-                        console.log(fileURL);
-                        if(fileURL!=  undefined){
+                        if(fileURL !==  undefined){
                             sessionStorage.localFile = fileURL ;
                             $.get("setSession.php?url="+fileURL,function (response) {
                                 console.log(response);
@@ -695,7 +736,6 @@
                             return;
                         }
 
-
                         button.innerHTML = progress;
                     });
                 };
@@ -706,7 +746,7 @@
             function uploadToServer(recordRTC, callback) {
                 var blob = recordRTC instanceof Blob ? recordRTC : recordRTC.blob;
                 var fileType = blob.type.split('/')[0] || 'audio';
-                var fileName = (Math.random() * 1000).toString().replace('.', '');
+                var fileName = (Math.random() * 1000).toString().replace('.', '') + ".wav";
 
                 // if (fileType === 'audio') {
                 //     // fileName += '.' + (!!navigator.mozGetUserMedia ? 'ogg' : 'wav');
@@ -714,7 +754,7 @@
                 // } else {
                 //     fileName += '.webm';
                 // }
-                fileName = "audio.wav";
+
                 // create FormData
                 var formData = new FormData();
                 formData.append(fileType + '-filename', fileName);
@@ -740,7 +780,7 @@
             function makeXMLHttpRequest(url, data, callback) {
                 var request = new XMLHttpRequest();
                 request.onreadystatechange = function() {
-                    if (request.readyState == 4 && request.status == 200) {
+                    if (request.readyState === 4 && request.status === 200) {
                         callback('upload-ended');
                     }
                 };

@@ -1,6 +1,6 @@
 <?php
-
     session_start();
+
     $convertData = array(
         "input" => array(
             array(
@@ -20,6 +20,7 @@
         )
     );
     $payload = json_encode($convertData);
+
     $curl = curl_init();
     curl_setopt_array($curl, array(
         CURLOPT_URL => "https://api2.online-convert.com/jobs",
@@ -41,29 +42,26 @@
     $response = curl_exec($curl);
     $err = curl_error($curl);
     curl_close($curl);
-//var_dump($err);
+// var_dump($err);
 // var_dump($response);
 // exit;
     if ($err) {
-
         echo "ERROR: Convert Failed! " . $err;
     } else {
         $res = json_decode($response, true);
         $_SESSION['id'] = $res['id'];
     }
 
-
-
     if (isset($_SESSION['id'])){
             $id = $_SESSION['id'];
+    }else{
+    //var_dump($_SESSION['id']);
+    //exit;
+        header("Location: index.html");
+        die();
+    }
+?>
 
-        }else{
-        //var_dump($_SESSION['id']);
-        //exit;
-            header("Location: index.html");
-            die();
-        }
-    ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -98,15 +96,15 @@
 			myVar = setInterval(checkStatus, 5000);
 
 			function checkStatus(){
-				$.ajax({ 
+				$.ajax({
 					type:'post',
 					url: 'checkconvert.php',
 					data: {fileId: '<?php echo $id; ?>'},
-					dataType: 'json', 
+					dataType: 'json',
 					success: function(data){
 						if (data.status === "OK"){
 							clearInterval(myVar);
-							$('#msg').text("Transfering Your Audio Among Servers");
+							$('#msg').text("Uploading file to convert.");
 							processFile(data.url);
 						}
 						if (data.status === "ERROR"){
@@ -118,11 +116,11 @@
 			}
 
 			function processFile(url) {
-				$.ajax({ 
+				$.ajax({
 					type:'post',
 					url: 'processfile.php',
 					data: {url: url},
-					dataType: 'json', 
+					dataType: 'json',
 					success: function(data){
 						if (data.status === "OK"){
 							$('#msg').text("Converting To Text. This may take longer than usual. Please do not refresh the page.");
