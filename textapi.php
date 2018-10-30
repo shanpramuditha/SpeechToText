@@ -1,7 +1,7 @@
 <?php
     if ( ! session_id() ) @ session_start();
 
-	$_SESSION['url'] = "sdas";
+//	$_SESSION['url'] = "sdas";
 	ini_set('max_execution_time', 0);
 	require 'vendor/autoload.php';
 	use Exception;
@@ -46,10 +46,10 @@
 				$alternative = $result->alternatives()[0];
 				$text .= $alternative['transcript'];
 			}
-		}
 
-		$fileName = $_SESSION['fileName'];
-		update_mongodb($fileName, $text);
+            $fileName = $_SESSION['fileName'];
+            update_mongodb($fileName, $text);
+		}
 
 	}else{
 		header("Location: index.php");
@@ -57,7 +57,7 @@
 	}
 
 function update_mongodb($filename, $text){
-    $manager = new MongoDB\Driver\Manager("mongodb://eduscope:edu123123@ds143893.mlab.com:43893/eduscope");
+    $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 
     try {
         $bulk = new MongoDB\Driver\BulkWrite();
@@ -101,7 +101,7 @@ function update_mongodb($filename, $text){
 							 </div>
 						</form>
 						<br>
-						<a href="index.html" class="btn btn-success">Start New Meeting</a>
+						<a href="index.php" class="btn btn-success">Start New Meeting</a>
 					</div>
 				</div>
 			</div>

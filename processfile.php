@@ -1,14 +1,16 @@
 <?php
-    session_start();
+    if ( ! session_id() ) @ session_start();
+
     ini_set('max_execution_time', 0);
     require 'vendor/autoload.php';
 	use Google\Cloud\Speech\SpeechClient;
 	use Google\Cloud\Storage\StorageClient;
 	use Google\Cloud\Core\ExponentialBackoff;
     $url = $_POST['url'];
-    
+
     // Download File
-    file_put_contents("audio.wav", fopen($url, 'r'));
+    file_put_contents("uploads/audio.wav", fopen($url, 'r'));
+
     // Upload To GCloud
     $projectId = 'protean-topic-209902';
     $bucketName = 'audio-to-text-storage';
@@ -17,7 +19,7 @@
         'keyFilePath' => 'key.json',
     ]);
     
-    $file = fopen("audio.wav", 'r');
+    $file = fopen("uploads/audio.wav", 'r');
     $bucket = $storage->bucket($bucketName);
     $object = $bucket->upload($file, [
         'name' => 'audio.wav'

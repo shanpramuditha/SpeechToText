@@ -1,5 +1,5 @@
 <?php
-// Muaz Khan     - www.MuazKhan.com 
+// Muaz Khan     - www.MuazKhan.com
 // MIT License   - https://www.webrtc-experiment.com/licence/
 // Documentation - https://github.com/muaz-khan/RecordRTC
 
@@ -42,11 +42,11 @@ function selfInvoker()
         echo 'File name must start with "RecordRTC-"';
         return;
     }
-    
+
     $fileName = '';
     $tempName = '';
     $file_idx = '';
-    
+
     if (!empty($_FILES['audio-blob'])) {
         $file_idx = 'audio-blob';
         $fileName = $_POST['audio-filename'];
@@ -56,7 +56,7 @@ function selfInvoker()
         $fileName = $_POST['video-filename'];
         $tempName = $_FILES[$file_idx]['tmp_name'];
     }
-    
+
     if (empty($fileName) || empty($tempName)) {
         if(empty($tempName)) {
             echo 'Invalid temp_name: '.$tempName;
@@ -103,7 +103,7 @@ function selfInvoker()
         echo 'Invalid file extension: '.$extension;
         return;
     }
-    
+
     if (!move_uploaded_file($tempName, $filePath)) {
         if(!empty($_FILES["file"]["error"])) {
             $listOfErrors = array(
@@ -153,13 +153,13 @@ function return_bytes($val) {
 */
 
 function save_to_mongodb($filename){
-    $manager = new MongoDB\Driver\Manager("mongodb://eduscope:edu123123@ds143893.mlab.com:43893/eduscope");
+    $manager = new MongoDB\Driver\Manager("mongodb://localhost:27017");
 
     try {
         $bulk = new MongoDB\Driver\BulkWrite();
         $bulk->insert(
             [
-                'name' => "Recording on ".date("Y-m-d"),
+                'name' => "Recording on ".date("Y-m-d")." at ".date("h:i"),
                 "filename" => $filename,
                 "transcript" => "blank_for_now"
             ]

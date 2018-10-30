@@ -114,24 +114,40 @@ function get_all_records_from_mongodb(){
 <body>
         <article>
         <section>
-            <div align="right">
-                <input class="form-control" list="artists" id="artist" maxlength="20" placeholder="search" required autocomplete="off"/>
+            <div align="center">
+                <input class="form-control" list="recordings" id="recording" maxlength="20" placeholder="enter search query"
+                       required autocomplete="off" style="width: 100%"/>
 
-                <datalist id="artists">
+                <datalist id="recordings" >
                     <script type='text/javascript'>
                         <?php
-                        $php_array = get_all_records_from_mongodb();
-                        $js_array = json_encode($php_array);
-                        echo "var recordings = ". $js_array . ";\n";
+                            $php_array = get_all_records_from_mongodb();
+                            $js_array = json_encode($php_array);
+                            echo "var recordings = ". $js_array . ";\n";
                         ?>
-
                         for (var key in recordings) {
                             let filename = recordings[key].filename.split('.')[0];
-                            let name = recordings[key].name.split(' ')[2];
-                            let transcript = recordings[key].transcript;
+                            let name = recordings[key].name.split(' ')[2] + ' ' + recordings[key].name.split(' ')[4];
+                            let transcript = recordings[key].transcript; //.substr(0, 10);
 
-                            $('#artists').append("<option id='" + filename + "' value='" + transcript + "'>" + name + "</option>");
+                            $('#recordings').append("<option id='" + filename + "' value='" + name + "'>" + transcript + "</option>");
                         }
+
+                        // document.getElementById('recording').addEventListener('input', function () {
+                        //     console.log('changed');
+                        // });
+
+                        $(function() {
+                            $('#recording').on('input',function() {
+                                var opt = $('option[value="'+$('#recording').val()+'"]');
+
+                                var selected = opt.length ? opt.attr('id') : undefined;
+
+                                if (selected) {
+                                    window.location = "search_results.php?record=" + selected;
+                                }
+                            });
+                        });
                     </script>
                 </datalist>
             </div>

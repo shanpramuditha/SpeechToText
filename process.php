@@ -57,7 +57,7 @@
     }else{
     //var_dump($_SESSION['id']);
     //exit;
-        header("Location: index.html");
+        header("Location: index.php");
         die();
     }
 ?>
@@ -109,7 +109,7 @@
 						}
 						if (data.status === "ERROR"){
 							alert ("Converting Error! Please Retry.");
-							window.location.href = "index.html";
+							window.location.href = "index.php";
 						}
 					}
 				});
@@ -129,7 +129,7 @@
 						}
 						if (data.status === "ERROR"){
 							alert ("Converting Error! Please Retry.");
-							window.location.href = "index.html";
+							window.location.href = "index.php";
 						}
 					}
 				});
